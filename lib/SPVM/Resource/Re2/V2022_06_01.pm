@@ -24,26 +24,13 @@ L<SPVM> is yet development status.
 
 =head1 Class Methods
 
-
-
-=head1 Instance Methods
-
-
-
 =head1 Repository
 
-
-
-=head1 Bug Report
-
-
-
-=head1 Support
-
-
+L<https://github.com/yuki-kimoto/SPVM-Resource-Re2-V2022_06_01>
 
 =head1 Author
 
+YuKi Kimoto C<kimoto.yuki@gmail.com>
 
 =heade Porting
 
@@ -57,7 +44,7 @@ Copy all headers of C<RE2> into C<lib/SPVM/Resource/Re2/V2022_06_01.native/inclu
 
 Find source files.
 
-  find * | grep -P 're2/\w+\.cc$' | grep -v blib
+  find * | grep -P '(util|re2)/\w+\.cc$' | grep -v -P 'util/(test|benchmark|fuzz)\.cc$' | grep -v blib
 
 =head1 Copyright & LICENSE
 
