@@ -47,13 +47,13 @@ L<SPVM> is yet development status.
 
 =heade Porting
 
-This resource is created by the following process.
+This resource is created by the following way.
 
 Copy all files of C<RE2> into C<lib/SPVM/Resource/Re2/V2022_06_01.native/src>.
 
-Copy all headers of C<RE2> into C<lib/SPVM/Resource/Re2/V2022_06_01.native/include>.
+Copy all headers of C<RE2> into C<lib/SPVM/Resource/Re2/V2022_06_01.native/include> in the following command.
 
-  rsync -a --include=".h" lib/SPVM/Resource/Re2/V2022_06_01.native/src/ lib/SPVM/Resource/Re2/V2022_06_01.native/include/
+  rsync -av --include='*/' --include='*.h' --exclude='*' lib/SPVM/Resource/Re2/V2022_06_01.native/src/ lib/SPVM/Resource/Re2/V2022_06_01.native/include/
 
 =head1 Copyright & LICENSE
 
