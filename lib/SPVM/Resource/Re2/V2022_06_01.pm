@@ -55,6 +55,10 @@ Copy all headers of C<RE2> into C<lib/SPVM/Resource/Re2/V2022_06_01.native/inclu
 
   rsync -av --include='*/' --include='*.h' --exclude='*' lib/SPVM/Resource/Re2/V2022_06_01.native/src/ lib/SPVM/Resource/Re2/V2022_06_01.native/include/
 
+Find source files.
+
+  find * | grep '\.cc$' | grep -v 'testing' | grep 're2/'
+
 =head1 Copyright & LICENSE
 
 Copyright 2022-2022 YuKi Kimoto, all rights reserved.
