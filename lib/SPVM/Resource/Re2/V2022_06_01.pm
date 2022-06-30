@@ -57,7 +57,7 @@ Copy all headers of C<RE2> into C<lib/SPVM/Resource/Re2/V2022_06_01.native/inclu
 
 Find source files.
 
-  find * | grep '\.cc$' | grep -v 'testing' | grep 're2/'
+  find * | grep -P 're2/\w+\.cc$' | grep -v blib
 
 =head1 Copyright & LICENSE
 
