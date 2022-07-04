@@ -165,3 +165,5 @@ t/basic.t
 t/lib/SPVM/TestCase/Resource/Re2/V2022_06_01.config
 t/lib/SPVM/TestCase/Resource/Re2/V2022_06_01.cpp
 t/lib/SPVM/TestCase/Resource/Re2/V2022_06_01.spvm
+t/support/cpp11_check.cpp
+t/support/work/.gitkeep
