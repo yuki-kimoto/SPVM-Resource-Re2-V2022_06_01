@@ -1,9 +1,7 @@
-0.04 2022-07-04
-  [Changes]
-    * Add pthread require library.
 0.03 2022-07-04
   [Changes]
     * Need a compiler supporing C++11.
+    * Add pthread require library.
 
 0.02 2022-07-01
   [Changes]
