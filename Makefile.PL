@@ -53,6 +53,7 @@ WriteMakefile(
   CONFIGURE_REQUIRES => {
     'SPVM'              => '0.9670',
   },
+  NORECURS => 1,
 );
 
 sub MY::postamble {
