@@ -51,7 +51,7 @@ WriteMakefile(
     },
   },
   CONFIGURE_REQUIRES => {
-    'SPVM'              => '0.9670',
+    'SPVM'              => '0.9669',
   },
   NORECURS => 1,
 );
