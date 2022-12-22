@@ -3,7 +3,6 @@ use ExtUtils::MakeMaker;
 use strict;
 use warnings;
 use Config;
-use SPVM::Builder::Config;
 use File::Temp();
 use Getopt::Long 'GetOptions';
 
@@ -17,7 +16,8 @@ if ($meta) {
 }
 
 # Check supported environment
-{
+unless ($meta) {
+  require SPVM::Builder::Config;
   # Need a compiler supporting c++11
   my $config = SPVM::Builder::Config->new_cpp(file_optional => 1);
   my $cc = $config->cc;
