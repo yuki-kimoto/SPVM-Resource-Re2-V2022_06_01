@@ -50,8 +50,8 @@ WriteMakefile(
       },
     },
   },
-  CONFIGURE_REQUIRES => {
-    'SPVM'              => '0.9669',
+  PREREQ_PM         => {
+    'SPVM'              => '0.9670',
   },
   NORECURS => 1,
 );
