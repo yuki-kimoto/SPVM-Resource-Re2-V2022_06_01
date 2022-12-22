@@ -3,7 +3,6 @@ use ExtUtils::MakeMaker;
 use strict;
 use warnings;
 use Config;
-use SPVM::Builder::Util::API;
 use SPVM::Builder::Config;
 use File::Temp();
 use Getopt::Long 'GetOptions';
@@ -51,7 +50,6 @@ WriteMakefile(
       },
     },
   },
-  # SPVM::Builder::Util::API is needed for Makefile.PL
   CONFIGURE_REQUIRES => {
     'SPVM'              => '0.9670',
   },
@@ -61,8 +59,9 @@ sub MY::postamble {
 
   my $make_rule = '';
   
-  
-  
+  unless ($no_build_spvm_modules) {
+    require SPVM::Builder::Util::API;
+  }
   
   return $make_rule;
 }
