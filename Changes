@@ -1,7 +1,7 @@
 0.06 2022-12-22
   [Test Improvement]
     * Improved Github Action workflow.
-      cpanm is downloaed from the web and the dependencies are resolved from Makefile.PL.
+      cpanm is removed and downloaed from the web and the dependencies are resolved from Makefile.PL.
   [Document Fix]
     * Fixed the required libraries.
     
@@ -10,6 +10,8 @@
       
       [After]
       $config->add_libs('stdc++', 'pthread');
+  [CPAN Indexing Fix]
+    * cpanm is not indexed on CPAN.
       
 0.05 2022-07-06
   [Changes]
