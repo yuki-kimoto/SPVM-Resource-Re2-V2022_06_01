@@ -6,6 +6,16 @@ use Config;
 use SPVM::Builder::Util::API;
 use SPVM::Builder::Config;
 use File::Temp();
+use Getopt::Long 'GetOptions';
+
+GetOptions(
+  'meta' => \my $meta,
+  'no-build-spvm-modules' => \my $no_build_spvm_modules,
+);
+
+if ($meta) {
+  $no_build_spvm_modules = 1;
+}
 
 # Check supported environment
 {
@@ -43,7 +53,7 @@ WriteMakefile(
   },
   # SPVM::Builder::Util::API is needed for Makefile.PL
   CONFIGURE_REQUIRES => {
-    'SPVM'              => '0.9614',
+    'SPVM'              => '0.9670',
   },
 );
 
