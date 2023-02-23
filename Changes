@@ -12,7 +12,8 @@
       $config->add_libs('stdc++', 'pthread');
   [CPAN Indexing Fix]
     * cpanm is not indexed on CPAN.
-      
+  [Bug Fix]
+    * Fixed the linking bug that Link libstdc++ and libpthread didn't be linked.
 0.05 2022-07-06
   [Changes]
     * Nothing to change. Because pause indexer failed, the version is upgraded.
